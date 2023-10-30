@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   <head>
-    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
   </head>
 
-  <body>
+  <body class="bg-purple-50">
     {% include header.html %}
+    <main class="container mx-auto p-4">
       {{ content }}
+    </main>
     {% include footer.html %}
   </body>
 </html>
