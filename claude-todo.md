@@ -22,7 +22,7 @@
 - [ ] Add breadcrumb navigation for better UX
 
 ## Visual & Design Improvements
-- [ ] Optimize all images (convert to WebP with fallbacks)
+- [x] Optimize all images (convert to WebP with fallbacks)
 - [ ] Implement lazy loading for images
 - [ ] Standardize aspect ratios for all titleholder photos
 - [ ] Add smooth scroll animations
