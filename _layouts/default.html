@@ -1,8 +1,54 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   <head>
-    <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="keywords" content="Miss Boston, Miss Cambridge, beauty pageant, scholarship, Miss America, Massachusetts, pageant application">
+    <meta name="author" content="{{ site.title }}">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.url }}/assets/MissBoston_Logo_GoldHorizontal.png">
+    <meta property="og:site_name" content="{{ site.title }}">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:image" content="{{ site.url }}/assets/MissBoston_Logo_GoldHorizontal.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/header_crown.png">
+    <link rel="apple-touch-icon" href="/assets/header_crown.png">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "{{ site.title }}",
+      "url": "{{ site.url }}",
+      "logo": "{{ site.url }}/assets/MissBoston_Logo_GoldHorizontal.png",
+      "description": "{{ site.description }}",
+      "email": "{{ site.email }}",
+      "sameAs": [
+        "https://www.instagram.com/missbostonorg",
+        "https://www.facebook.com/MissAmericaBoston"
+      ]
+    }
+    </script>
+    
+    <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
   </head>
 
   <body class="bg-purple-50">
