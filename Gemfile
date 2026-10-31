@@ -12,6 +12,7 @@ gem 'bigdecimal'
 gem 'csv'
 gem 'jekyll', '~> 4.3.2'
 gem 'jekyll-postcss'
+gem 'logger'
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
