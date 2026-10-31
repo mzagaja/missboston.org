@@ -39,7 +39,7 @@
 - [ ] Optimize font loading strategy
 
 ## Content Updates
-- [ ] Make copyright year dynamic using Jekyll variables
+- [x] Make copyright year dynamic using Jekyll variables
 - [ ] Add Schema.org markup for events
 - [ ] Create blog/news section for regular updates
 - [ ] Add more news articles and press coverage
